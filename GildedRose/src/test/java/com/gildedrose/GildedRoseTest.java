@@ -102,4 +102,12 @@ class GildedRoseTest {
         assertThat(app.items[0].quality, is(50));
     }
 
+	@Test
+	void testAgedBrieQualityDoubleWhen0() {
+        Item[] items = new Item[] { new Item("Aged Brie", 0, 12) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(14));
+    }
+
 }
