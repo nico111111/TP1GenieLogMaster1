@@ -5,7 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 class GildedRoseTest {
-
+	
     @Test
     void testItemNormalDecaySellIn() {
         Item[] items = new Item[] { new Item("Anneau de force du Dragon +5", 5, 20) };
@@ -13,7 +13,7 @@ class GildedRoseTest {
         app.updateQuality();
         assertThat(app.items[0].sellIn, is(4));
     }
-
+	
 	@Test
 	void testItemNormalDecayQuality() {
         Item[] items = new Item[] { new Item("Anneau de force du Dragon +5", 5, 20) };
@@ -45,7 +45,7 @@ class GildedRoseTest {
         app.updateQuality();
         assertThat(app.items[0].quality, is(6));
     }
-
+	
 	@Test
 	void testAgedBrieQualityNoMoreThan50() {
         Item[] items = new Item[] { new Item("Aged Brie", 5, 50) };

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-09-15T14:20:30" hostname="ada.local.isima.fr" time="0.019">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-09-15T15:02:10" hostname="ada.local.isima.fr" time="0.019">
   <properties/>
-  <testcase name="testPassQualityMoreThanTen()" classname="com.gildedrose.GildedRoseTest" time="0.01"/>
-  <testcase name="testQualityNotNegative()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testItemNormalDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="testPassQualityMoreThanTen()" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="testQualityNotNegative()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testItemNormalDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="testAgedBrieQualityNoMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testPassQualityZeroSellInZero()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="testAgedBrieQualityAugment()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="testItemEndOfDateDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testPassQualityNoMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testPassQualityLessThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testPassQualityZeroSellInZero()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="testAgedBrieQualityAugment()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="testItemEndOfDateDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testPassQualityNoMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testPassQualityLessThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemNormalDecaySellIn()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityLessThanTenMoreThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testSulfurasQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
