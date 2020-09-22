@@ -2,8 +2,22 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-09-15T15:52:01.816">
-<file name="/home/local.isima.fr/nidelmas/Documents/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
+    version="6.23.0" timestamp="2020-09-22T17:06:04.288">
+<file name="/mnt/local.isima.fr/nidelmas/Documents/GenieLog/TP1GenieLogMaster1/GildedRose/src/test/java/com/gildedrose/GildedRoseTest.java">
+<violation beginline="11" endline="11" begincolumn="46" endcolumn="75" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testItemNormalDecaySellIn" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Anneau de force du Dragon +5&quot; appears 5 times in this file; the first occurrence is on line 11
+</violation>
+<violation beginline="51" endline="51" begincolumn="46" endcolumn="56" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testAgedBrieQualityAugment" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Aged Brie&quot; appears 4 times in this file; the first occurrence is on line 51
+</violation>
+<violation beginline="75" endline="75" begincolumn="46" endcolumn="88" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testPassQualityMoreThanTen" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Backstage passes to a TAFKAL80ETC concert&quot; appears 6 times in this file; the first occurrence is on line 75
+</violation>
+<violation beginline="139" endline="139" begincolumn="46" endcolumn="65" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.gildedrose" class="GildedRoseTest" method="testConjuredQualityNormal" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Conjured Mana Cake&quot; appears 4 times in this file; the first occurrence is on line 139
+</violation>
+</file>
+<file name="/mnt/local.isima.fr/nidelmas/Documents/GenieLog/TP1GenieLogMaster1/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
 <violation beginline="19" endline="35" begincolumn="20" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="TexttestFixture" method="main" variable="app" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DU'-anomaly for variable 'app' (lines '19'-'35').
 </violation>

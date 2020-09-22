@@ -2,15 +2,23 @@ package com.gildedrose;
 import java.util.*;
 
 class GildedRose {
-	private int maxQuality=50;
-	private int decayRate=1;
-	private int backstageTier1=11;
-	private int backstageTier2=6;
-    Item[] items;
+	private static int maxQuality=50;
+	private static int decayRate=1;
+	private static int backstageTier1=11;
+	private static int backstageTier2=6;
+    private Item[] items;
 
     public GildedRose(Item[] items) {
         this.items = items;
     }
+
+	public Item[] getItems(){
+		return this.items;
+	}
+
+	public void setItems(Item[] items){
+		this.items = items;
+	}
 
     public void updateQuality() {
 		List<String> listAevite = Arrays.asList(new String[]{"Aged Brie","Backstage passes to a TAFKAL80ETC concert","Sulfuras, Hand of Ragnaros","Conjured Mana Cake"});
