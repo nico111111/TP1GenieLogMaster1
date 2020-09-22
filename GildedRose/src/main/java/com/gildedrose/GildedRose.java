@@ -15,13 +15,7 @@ class GildedRose {
                 items[i].sellIn = items[i].sellIn - 1;
             } 
         	if (!listAevite.contains(items[i].name)) {
-                if (items[i].quality > 0) {
-                	if (items[i].sellIn < 0) {
-                		items[i].quality = items[i].quality - 2;
-                	}else {
-                    	items[i].quality = items[i].quality - 1;
-                	}
-                }   
+                Normaux(items[i]);
             } 
             if (items[i].name.equals("Aged Brie")){
             	AgedBrie(items[i]);
@@ -29,10 +23,22 @@ class GildedRose {
             if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")){
             	BackStage(items[i]);
             }
+			if (items[i].name.equals("Conjured Mana Cake")){
+            	Conjured(items[i]);
+            }
         }
     }   
     
-     
+    public void Normaux(Item item){
+		if (item.quality > 0) {
+        	if (item.sellIn < 0 && item.quality >= 2) {
+        		item.quality = item.quality - 2;
+        	}else {
+            	item.quality = item.quality - 1;
+        	}
+        }   
+	}
+
     public void AgedBrie(Item item){
     	if (item.quality < 50) {
 			item.quality = item.quality + 1;
@@ -58,4 +64,17 @@ class GildedRose {
 	    	}
     	}
     }
+
+	public void Conjured(Item item){
+		if (item.quality > 0) {
+        	if (item.sellIn < 0) {
+        		item.quality = item.quality - 4;
+        	}else {
+            	item.quality = item.quality - 2;
+        	}
+        }
+		if (item.quality<0){
+			item.quality=0;
+		}   	
+	}
 }

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-09-22T13:38:35" hostname="ada.local.isima.fr" time="0.022">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-09-22T13:55:28" hostname="ada.local.isima.fr" time="0.02">
   <properties/>
-  <testcase name="testPassQualityMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="testPassQualityMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.01"/>
   <testcase name="testPassQualityMoreThanTen()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testQualityNotNegative()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemNormalDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testAgedBrieQualityNoMoreThan50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="testAgedBrieQualityDoubleWhen0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testAgedBrieQualityNoMoreThan50Perimed()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testAgedBrieQualityNoMoreThan50Perimed()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityZeroSellInZero()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testAgedBrieQualityAugment()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testAgedBrieQualityAugment()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemEndOfDateDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testPassQualityNoMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="testPassQualityNoMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="testPassQualityLessThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemNormalDecaySellIn()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityLessThanTenMoreThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testSulfurasQuality()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testSulfurasQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
