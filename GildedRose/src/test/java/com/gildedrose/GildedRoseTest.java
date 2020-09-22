@@ -109,5 +109,13 @@ class GildedRoseTest {
         app.updateQuality();
         assertThat(app.items[0].quality, is(14));
     }
+    
+    @Test
+	void testAgedBrieQualityNoMoreThan50Perimed() {
+        Item[] items = new Item[] { new Item("Aged Brie", 0, 49) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(50));
+    }
 
 }
