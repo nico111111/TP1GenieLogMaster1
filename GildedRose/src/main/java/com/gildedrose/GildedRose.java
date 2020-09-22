@@ -2,10 +2,10 @@ package com.gildedrose;
 import java.util.*;
 
 class GildedRose {
-	int maxQuality=50;
-	int decayRate=1;
-	int backstageTier1=11;
-	int backstageTier2=6;
+	private int maxQuality=50;
+	private int decayRate=1;
+	private int backstageTier1=11;
+	private int backstageTier2=6;
     Item[] items;
 
     public GildedRose(Item[] items) {
