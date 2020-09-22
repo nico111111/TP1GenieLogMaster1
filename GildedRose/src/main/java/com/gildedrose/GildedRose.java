@@ -2,6 +2,10 @@ package com.gildedrose;
 import java.util.*;
 
 class GildedRose {
+	int maxQuality=50;
+	int decayRate=1;
+	int backstageTier1=11;
+	int backstageTier2=6;
     Item[] items;
 
     public GildedRose(Item[] items) {
@@ -12,52 +16,52 @@ class GildedRose {
 		List<String> listAevite = Arrays.asList(new String[]{"Aged Brie","Backstage passes to a TAFKAL80ETC concert","Sulfuras, Hand of Ragnaros","Conjured Mana Cake"});
         for (int i = 0; i < items.length; i++) {       
         	if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
-                items[i].sellIn = items[i].sellIn - 1;
+                items[i].sellIn = items[i].sellIn - decayRate;
             } 
         	if (!listAevite.contains(items[i].name)) {
-                Normaux(items[i]);
+                normaux(items[i]);
             } 
             if (items[i].name.equals("Aged Brie")){
-            	AgedBrie(items[i]);
+            	agedBrie(items[i]);
             }
             if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")){
-            	BackStage(items[i]);
+            	backStage(items[i]);
             }
 			if (items[i].name.equals("Conjured Mana Cake")){
-            	Conjured(items[i]);
+            	conjured(items[i]);
             }
         }
     }   
     
-    public void Normaux(Item item){
+    public void normaux(Item item){
 		if (item.quality > 0) {
-        	if (item.sellIn < 0 && item.quality >= 2) {
-        		item.quality = item.quality - 2;
+        	if (item.sellIn < 0 && item.quality >= decayRate*2) {
+        		item.quality = item.quality - decayRate*2;
         	}else {
-            	item.quality = item.quality - 1;
+            	item.quality = item.quality - decayRate;
         	}
         }   
 	}
 
-    public void AgedBrie(Item item){
-    	if (item.quality < 50) {
-			item.quality = item.quality + 1;
-			if (item.sellIn < 0 && item.quality < 50) {
-				item.quality = item.quality + 1;
+    public void agedBrie(Item item){
+    	if (item.quality < maxQuality) {
+			item.quality = item.quality + decayRate;
+			if (item.sellIn < 0 && item.quality < maxQuality) {
+				item.quality = item.quality + decayRate;
 			}
 		}      
     }
     
     
-    public void BackStage(Item item){   
-    	if (item.quality < 50) {
+    public void backStage(Item item){  
+    	if (item.quality < maxQuality) {
     		if (item.sellIn > 0) {
-				item.quality = item.quality + 1;
-				if (item.sellIn < 11 && item.quality < 50) {
-					item.quality = item.quality + 1;
+				item.quality = item.quality + decayRate;
+				if (item.sellIn < backstageTier1 && item.quality < maxQuality) {
+					item.quality = item.quality + decayRate;
 				}
-				if (item.sellIn < 6 && item.quality < 50) {
-					item.quality = item.quality + 1;
+				if (item.sellIn < backstageTier2 && item.quality < maxQuality) {
+					item.quality = item.quality + decayRate;
 				}
 	    	}else{
 	    		item.quality = 0;
@@ -65,12 +69,12 @@ class GildedRose {
     	}
     }
 
-	public void Conjured(Item item){
+	public void conjured(Item item){
 		if (item.quality > 0) {
         	if (item.sellIn < 0) {
-        		item.quality = item.quality - 4;
+        		item.quality = item.quality - decayRate*4;
         	}else {
-            	item.quality = item.quality - 2;
+            	item.quality = item.quality - decayRate*2;
         	}
         }
 		if (item.quality<0){
