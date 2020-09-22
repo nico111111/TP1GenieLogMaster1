@@ -9,7 +9,7 @@ class GildedRose {
     }
 
     public void updateQuality() {
-		List<String> listAevite = Arrays.asList(new String[]{"Aged Brie","Backstage passes to a TAFKAL80ETC concert","Sulfuras, Hand of Ragnaros"});
+		List<String> listAevite = Arrays.asList(new String[]{"Aged Brie","Backstage passes to a TAFKAL80ETC concert","Sulfuras, Hand of Ragnaros","Conjured Mana Cake"});
         for (int i = 0; i < items.length; i++) {       
         	if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
                 items[i].sellIn = items[i].sellIn - 1;

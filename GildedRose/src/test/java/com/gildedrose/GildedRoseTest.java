@@ -39,6 +39,14 @@ class GildedRoseTest {
     }
 
 	@Test
+	void testQualityNotNegativeAgainIf1AndPerimed() {
+        Item[] items = new Item[] { new Item("Anneau de force du Dragon +5", 0, 1) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(0));
+    }
+
+	@Test
 	void testAgedBrieQualityAugment() {
         Item[] items = new Item[] { new Item("Aged Brie", 5, 5) };
         GildedRose app = new GildedRose(items);
@@ -124,6 +132,38 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertThat(app.items[0].quality, is(55));
+    }
+
+	@Test
+	void testConjuredQualityNormal() {
+        Item[] items = new Item[] { new Item("Conjured Mana Cake", 4, 25) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(23));
+    }
+
+	@Test
+	void testConjuredQualityPerimed() {
+        Item[] items = new Item[] { new Item("Conjured Mana Cake", 0, 25) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(21));
+    }
+
+	@Test
+	void testConjuredQualityNoLessThan0() {
+        Item[] items = new Item[] { new Item("Conjured Mana Cake", 0, 1) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(0));
+    }
+
+	@Test
+	void testConjuredQuality0() {
+        Item[] items = new Item[] { new Item("Conjured Mana Cake", 0, 0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertThat(app.items[0].quality, is(0));
     }
 
 }
