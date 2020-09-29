@@ -6,7 +6,7 @@ class GildedRose {
   private static int decayRate = 1;
   private static int backstageTier1 = 11;
   private static int backstageTier2 = 6;
-
+  
   private static String brie = "Aged Brie";
   private static String backStage = "Backstage passes to a TAFKAL80ETC concert";
   private static String sulfuras = "Sulfuras, Hand of Ragnaros";
@@ -14,16 +14,16 @@ class GildedRose {
 
   private Item[] items;
 
-  GildedRose(Item[] items) {
-    this.items = items;
+  GildedRose(Item[] listeitem) {
+    this.items = listeitem;
   }
 
   public Item[] getItems() {
     return this.items;
   }
 
-  public void setItems(Item[] items) {
-    this.items = items;
+  public void setItems(Item[] listeitem) {
+    this.items = listeitem;
   }
 
   public void updateQuality() {
@@ -33,21 +33,21 @@ class GildedRose {
         items[i].sellIn = items[i].sellIn - decayRate;
       }
       if (!listAevite.contains(items[i].name)) {
-        normaux(items[i]);
+        updateNormaux(items[i]);
       }
       if (items[i].name.equals(brie)) {
-        agedBrie(items[i]);
+        updateAgedBrie(items[i]);
       }
       if (items[i].name.equals(backStage)) {
-        backStage(items[i]);
+        updateBackStage(items[i]);
       }
       if (items[i].name.equals(conjured)) {
-        conjured(items[i]);
+        updateConjured(items[i]);
       }
     }
   }
 
-  public void normaux(Item item) {
+  public void updateNormaux(Item item) {
     if (item.quality > 0) {
       if (item.sellIn < 0 && item.quality >= decayRate * 2) {
         item.quality = item.quality - decayRate * 2;
@@ -57,7 +57,7 @@ class GildedRose {
     }
   }
 
-  public void agedBrie(Item item) {
+  public void updateAgedBrie(Item item) {
     if (item.quality < maxQuality) {
       item.quality = item.quality + decayRate;
       if (item.sellIn < 0 && item.quality < maxQuality) {
@@ -66,7 +66,7 @@ class GildedRose {
     }
   }
 
-  public void backStage(Item item) {
+  public void updateBackStage(Item item) {
     if (item.quality < maxQuality) {
       if (item.sellIn > 0) {
         item.quality = item.quality + decayRate;
@@ -82,7 +82,7 @@ class GildedRose {
     }
   }
 
-  public void conjured(Item item) {
+  public void updateConjured(Item item) {
     if (item.quality > 0) {
       if (item.sellIn < 0) {
         item.quality = item.quality - decayRate * 4;

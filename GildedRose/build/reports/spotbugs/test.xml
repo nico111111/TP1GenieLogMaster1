@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.1.1" sequence="0" timestamp="1601291922998" analysisTimestamp="1601291922999" release="0.0.1-SNAPSHOT">
+<BugCollection version="4.1.1" sequence="0" timestamp="1601387624333" analysisTimestamp="1601387624333" release="0.0.1-SNAPSHOT">
   <Project projectName="gilded-rose-kata (spotbugsTest)">
-    <Jar>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/build/classes/java/test/com/gildedrose/TexttestFixture.class</Jar>
     <Jar>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/build/classes/java/test/com/gildedrose/GildedRoseTest.class</Jar>
+    <Jar>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/build/classes/java/test/com/gildedrose/TexttestFixture.class</Jar>
     <AuxClasspathEntry>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/build/classes/java/main</AuxClasspathEntry>
     <AuxClasspathEntry>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/build/resources/main</AuxClasspathEntry>
     <AuxClasspathEntry>/home/local.isima.fr/febeaudoin/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar</AuxClasspathEntry>
@@ -15,7 +15,7 @@
     <SrcDir>/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/src/test/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 28 Sep 2020 13:18:42 +0200" total_classes="2" referenced_classes="19" total_bugs="0" total_size="152" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="3.35" clock_seconds="0.32" peak_mbytes="235.13" alloc_mbytes="455.50" gc_seconds="0.02">
+  <FindBugsSummary timestamp="Tue, 29 Sep 2020 15:53:44 +0200" total_classes="2" referenced_classes="19" total_bugs="0" total_size="152" num_packages="1" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="2.47" clock_seconds="0.28" peak_mbytes="233.88" alloc_mbytes="455.50" gc_seconds="0.01">
     <FileStats path="com/gildedrose/GildedRoseTest.java" bugCount="0" size="134"/>
     <FileStats path="com/gildedrose/TexttestFixture.java" bugCount="0" size="18"/>
     <PackageStats package="com.gildedrose" total_bugs="0" total_types="2" total_size="152">
@@ -23,10 +23,9 @@
       <ClassStats class="com.gildedrose.TexttestFixture" sourceFile="TexttestFixture.java" interface="false" size="18" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="80" invocations="407" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="4298" standardDeviationMicrosecondsPerInvocation="421"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="33" invocations="409" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="312" standardDeviationMicrosecondsPerInvocation="27"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="21" invocations="19" avgMicrosecondsPerInvocation="1144" maxMicrosecondsPerInvocation="20051" standardDeviationMicrosecondsPerInvocation="4458"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="11" invocations="375" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="563" standardDeviationMicrosecondsPerInvocation="64"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="74" invocations="407" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="6195" standardDeviationMicrosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="26" invocations="409" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="317" standardDeviationMicrosecondsPerInvocation="28"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="375" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="815" standardDeviationMicrosecondsPerInvocation="73"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
