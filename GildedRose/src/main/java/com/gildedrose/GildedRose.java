@@ -81,7 +81,7 @@ class GildedRose {
       }
     }
   }
-
+	//bonsoir
   public void updateConjured(Item item) {
     if (item.quality > 0) {
       if (item.sellIn < 0) {

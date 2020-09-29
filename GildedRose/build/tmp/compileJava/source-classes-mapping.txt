@@ -1,4 +1,0 @@
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
-com/gildedrose/Item.java
- com.gildedrose.Item
