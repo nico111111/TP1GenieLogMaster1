@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-09-29T17:28:17.090">
+    version="6.23.0" timestamp="2020-09-29T16:41:14.236">
 <file name="/home/local.isima.fr/febeaudoin/Documents/TP1GenieLogMaster1/GildedRose/src/test/java/com/gildedrose/TexttestFixture.java">
 <violation beginline="19" endline="35" begincolumn="16" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose" class="TexttestFixture" method="main" variable="app" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DU'-anomaly for variable 'app' (lines '19'-'35').

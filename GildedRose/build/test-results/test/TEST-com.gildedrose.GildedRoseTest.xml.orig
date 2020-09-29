@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-09-29T15:28:13" hostname="ada.local.isima.fr" time="0.023">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-09-29T14:41:15" hostname="ada.local.isima.fr" time="0.024">
   <properties/>
   <testcase name="testConjuredQuality0()" classname="com.gildedrose.GildedRoseTest" time="0.01"/>
   <testcase name="testPassQualityMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
@@ -13,14 +13,14 @@
   <testcase name="testAgedBrieQualityDoubleWhen0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testAgedBrieQualityNoMoreThan50Perimed()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testQualityNotNegativeAgainIf1AndPerimed()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testPassQualityZeroSellInZero()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="testPassQualityZeroSellInZero()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testAgedBrieQualityAugment()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemEndOfDateDecayQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityNoMoreThanFifty()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityLessThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testItemNormalDecaySellIn()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="testPassQualityLessThanTenMoreThanFive()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="testSulfurasQuality()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="testSulfurasQuality()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
