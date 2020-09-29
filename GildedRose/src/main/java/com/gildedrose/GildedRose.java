@@ -2,11 +2,16 @@ package com.gildedrose;
 import java.util.*;
 
 class GildedRose {
+
+  /*
+   *Initialisation des variables pour simplifier le changement de paramètre plus tard
+   *(changement sur le nom des produits, les paramètres de qualité, de vieillissement etc...).
+   */
   private static int maxQuality = 50;
   private static int decayRate = 1;
   private static int backstageTier1 = 11;
   private static int backstageTier2 = 6;
-  
+
   private static String brie = "Aged Brie";
   private static String backStage = "Backstage passes to a TAFKAL80ETC concert";
   private static String sulfuras = "Sulfuras, Hand of Ragnaros";
@@ -26,6 +31,10 @@ class GildedRose {
     this.items = listeitem;
   }
 
+  /*
+   *Utilisation d'une liste pour pouvoir plus facilement rajouter un nouveau produit dit spécial,
+   *puis en rajoutant un if avec l'appel de la méthode.
+   */
   public void updateQuality() {
     final List<String> listAevite = Arrays.asList(new String[]{brie, backStage, sulfuras, conjured});
     for (int i = 0; i < items.length; i++) {
@@ -47,6 +56,9 @@ class GildedRose {
     }
   }
 
+  /*
+   *Déclaration des méthodes pour chaque produit dit spécial qui varie différemment des produits normaux.
+   */
   public void updateNormaux(Item item) {
     if (item.quality > 0) {
       if (item.sellIn < 0 && item.quality >= decayRate * 2) {
