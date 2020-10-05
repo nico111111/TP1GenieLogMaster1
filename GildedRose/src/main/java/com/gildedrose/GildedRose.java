@@ -82,18 +82,18 @@ class GildedRose {
     if (item.quality < maxQuality) {
       if (item.sellIn > 0) {
         item.quality = item.quality + decayRate;
-        updateQualityBetweenIntervalle(item);
+        updateQualityBetweenIntervalle(item, backstageTier1, backstageTier2);
       } else {
         item.quality = 0;
       }
     }
   }
 
-  public void updateQualityBetweenIntervalle(Item item) {
-    if (item.sellIn < backstageTier1 && item.quality < maxQuality) {
+  public void updateQualityBetweenIntervalle(Item item, int intervalle1, int intervalle2) {
+    if (item.sellIn < intervalle1 && item.quality < maxQuality) {
       item.quality = item.quality + decayRate;
     }
-    if (item.sellIn < backstageTier2 && item.quality < maxQuality) {
+    if (item.sellIn < intervalle2 && item.quality < maxQuality) {
       item.quality = item.quality + decayRate;
     }
   }
