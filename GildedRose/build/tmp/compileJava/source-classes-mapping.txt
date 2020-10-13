@@ -1,6 +1,6 @@
 com/gildedrose/package-info.java
  com.gildedrose.package-info
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
 com/gildedrose/Item.java
  com.gildedrose.Item
+com/gildedrose/GildedRose.java
+ com.gildedrose.GildedRose

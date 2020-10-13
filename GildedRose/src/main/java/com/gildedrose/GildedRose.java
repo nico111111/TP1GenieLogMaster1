@@ -61,6 +61,7 @@ class GildedRose {
    */
   public void updateNormaux(Item item) {
     if (item.quality > 0) {
+      assert item.quality > 0;
       if (item.sellIn < 0 && item.quality >= decayRate * 2) {
         item.quality = item.quality - decayRate * 2;
       } else {
@@ -79,6 +80,10 @@ class GildedRose {
   }
 
   public void updateBackStage(Item item) {
+	/* If necessaire pour une fonction implicite du programme de base
+     * qui faisait en sorte qu'un backstage pass avec une qualité au-dessus
+     * de 50 avait une qualité fixe
+     */	
     if (item.quality < maxQuality) {
       if (item.sellIn > 0) {
         item.quality = item.quality + decayRate;

@@ -170,5 +170,13 @@ class GildedRoseTest {
     app.updateQuality();
     assertThat(app.getItems()[0].quality, is(0));
   }
+  
+  @Test
+  void testNegativeQuality() {
+    final Item[] items = new Item[] {new Item(normal, 5, -42) };
+    final GildedRose app = new GildedRose(items);
+    app.updateQuality();
+    assertThat(app.getItems()[0].quality, is(-42));
+  }
 
 }
